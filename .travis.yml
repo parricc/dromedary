@@ -1,8 +1,12 @@
 language: node_js
 node_js:
-- "7.2"
+- '7.2'
 beforescript:
 - npm install -g gulp
 - npm install
-script:
-gulp package-app
+script: gulp package-app
+deploy:
+  provider: heroku
+  app: dromemoo
+  api_key:
+    secure: gyG3hJPGtpvAJpraSUNcvXLJ73bG4Vglwu6VkRgDtbY9xicv5/D394pI7NhIlg/eNIGaEdyOyYRI95Is3I5WA1BszBaV7aV12pYKZSCSJ1UL9grQXIzLpnROYWkKE0ueg1V9V+HVdD0kr4BXuKSt0pZucmLEVgbDvWIDaJhsA+DlLTOcqKNr+EKi9gSlEb2oNpVak6ao0uatcFDAovIGivAwaI5+q0nXp68DxWh0lTu456F4kcI408Lwu4DEUUdNe/lRrR1/eXrdkCeUWrO/cfq6OuNKw4hLlunMDtQeUJvitIyQaSPS2uKWUmky0IZoloio58PbcNZaDFR+VGaG7CWGLuOzHGiJc+U5+p3MT4vegCdEgxzjoiLAWa2pDnS5aCiWvmx3fCIrlU0JcNys37EVUT/EUZ9YTfbpCMViz5PfFhD2ByJVydmfLo4iPPAZo0rHMo+KdRQIuO75wwg19KPFsidE6jziRLwanfyvc4XdaTk+0mrQTL2yfbZCSRKuGAS13+eYvZYxjC52WVWdzHrKb25vv5s84+rHx+4srwqlnAcur6nj6PZ58oTobDrTIXUwXjmxzrtmLxMIQBdvmq8H1YXIV5VoqUmBG8A12vfZvvrEPmdvCTW/MWzVj2Gc/q/BljeR7u1RAKATE8fYjkomx49c8f1LZVvn/sbk/qs=
